@@ -1,15 +1,15 @@
 header {
   text-align: center;
   padding: 40px;
-  background-color: #fb9224;
+  background-color: #ef7e56;
   border-radius: 30px;
-  color: #2a1a5e;
+  color: #305973;
 }
 .today {
   font-size: 30px;
 }
 .weather-app {
-  border: 1px solid #2a1a5e;
+  border: 1px solid #f9f9f9;
   padding: 20px;
   margin: 20px auto;
   max-width: 900px;
@@ -19,4 +19,13 @@ form {
 }
 body {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
+  background: #f9f9f9;
+}
+#search-button {
+  background-color: #305973;
+  border-color: #305973;
+}
+#current-location-button {
+  background-color: #305973;
+  border-color: #305973;
 }

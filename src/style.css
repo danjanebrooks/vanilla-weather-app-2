@@ -1,0 +1,22 @@
+header {
+  text-align: center;
+  padding: 40px;
+  background-color: #fb9224;
+  border-radius: 30px;
+  color: #2a1a5e;
+}
+.today {
+  font-size: 30px;
+}
+.weather-app {
+  border: 1px solid #2a1a5e;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+form {
+  margin-bottom: 20px;
+}
+body {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}

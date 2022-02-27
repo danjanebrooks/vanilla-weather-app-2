@@ -31,3 +31,10 @@ body {
 .code-link {
   text-align: center;
 }
+ul {
+  list-style: none;
+  text-align: center;
+}
+li {
+  display: inline-block;
+}

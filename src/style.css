@@ -21,11 +21,9 @@ body {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
   background: #f9f9f9;
 }
-#search-button {
-  background-color: #305973;
-  border-color: #305973;
-}
+#search-button,
 #current-location-button {
   background-color: #305973;
   border-color: #305973;
+  color: #f9f9f9;
 }

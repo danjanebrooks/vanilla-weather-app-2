@@ -1,9 +1,9 @@
 header {
   text-align: center;
   padding: 40px;
-  background-color: #ef7e56;
+  background-color: #305973;
   border-radius: 30px;
-  color: #305973;
+  color: #ded5c4;
   margin: 60px 20px 60px 20px;
 }
 .today {
@@ -24,8 +24,8 @@ body {
 }
 #search-button,
 #current-location-button {
-  background-color: #305973;
-  border-color: #305973;
+  background-color: #ef7e56;
+  border-color: #ef7e56;
   color: #f9f9f9;
 }
 .code-link {

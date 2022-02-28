@@ -4,7 +4,7 @@ header {
   background-color: #305973;
   border-radius: 30px;
   color: #ded5c4;
-  margin: 60px 20px 60px 20px;
+  margin: 60px 20px 0px 20px;
 }
 .weather-title {
   text-align: center;
@@ -36,11 +36,18 @@ body {
 }
 .code-link {
   text-align: center;
+  margin: 50px 0;
 }
 ul {
   list-style: none;
   text-align: center;
+  position: relative;
+  right: 17px;
 }
 li {
   display: inline-block;
+  padding: 10px 40px 10px 40px;
+  background-color: #ded5c4;
+  border-radius: 10px;
+  margin: 15px 10px 0 10px;
 }

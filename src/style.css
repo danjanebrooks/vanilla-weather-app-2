@@ -1,6 +1,6 @@
 header {
   text-align: center;
-  padding: 40px;
+  padding: 40px 0px 0px 0px;
   background-color: #305973;
   border-radius: 30px;
   color: #ded5c4;
@@ -53,6 +53,9 @@ li {
 }
 #current-description {
   font-size: 25px;
+  position: relative;
+  left: 60px;
+  top: 15px;
 }
 #current-temperature,
 #celsius,
@@ -62,4 +65,9 @@ li {
 #celsius,
 #fahrenheit {
   color: #ded5c4;
+}
+#icon-position {
+  position: relative;
+  right: 67px;
+  bottom: 10px;
 }

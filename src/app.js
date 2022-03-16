@@ -25,12 +25,18 @@ let mainDate = document.querySelector("#currentDate");
 mainDate.innerHTML = date;
 
 function showWeatherConditions(response) {
+  console.log(response.data);
   let cityNow = document.querySelector("#currentCity");
   cityNow.innerHTML = response.data.name;
   let tempNow = document.querySelector("#current-temperature");
   tempNow.innerHTML = Math.round(response.data.main.temp);
   let descriptionNow = document.querySelector("#current-description");
   descriptionNow.innerHTML = response.data.weather[0].main;
+  let iconNow = document.querySelector("#icon-position");
+  iconNow.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(event) {

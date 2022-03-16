@@ -25,6 +25,7 @@ let mainDate = document.querySelector("#currentDate");
 mainDate.innerHTML = date;
 
 function showWeatherConditions(response) {
+  console.log(response.data);
   let cityNow = document.querySelector("#currentCity");
   cityNow.innerHTML = response.data.name;
   let tempNow = document.querySelector("#current-temperature");
@@ -36,6 +37,8 @@ function showWeatherConditions(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  let windNow = document.querySelector("#wind-speed");
+  windNow.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function searchCity(event) {

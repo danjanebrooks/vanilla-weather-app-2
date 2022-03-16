@@ -25,7 +25,6 @@ let mainDate = document.querySelector("#currentDate");
 mainDate.innerHTML = date;
 
 function showWeatherConditions(response) {
-  console.log(response.data);
   let cityNow = document.querySelector("#currentCity");
   cityNow.innerHTML = response.data.name;
   let tempNow = document.querySelector("#current-temperature");

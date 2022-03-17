@@ -12,9 +12,6 @@ header {
   color: #305973;
   font-size: 60px;
 }
-.today {
-  font-size: 30px;
-}
 .weather-app {
   border: 1px solid #f9f9f9;
   padding: 20px;
@@ -58,7 +55,7 @@ li {
   top: 15px;
 }
 #current-temperature {
-  font-size: 35px;
+  font-size: 50px;
 }
 #celsius,
 #fahrenheit,
@@ -66,10 +63,23 @@ li {
   color: #ded5c4;
   font-size: 17px;
   position: relative;
-  bottom: 14px;
+  bottom: 25px;
 }
 #icon-position {
   position: relative;
-  right: 100px;
   bottom: 15px;
+}
+#celsius,
+#fahrenheit,
+#divider,
+#current-temperature,
+#icon-position {
+  position: relative;
+  left: 100px;
+}
+.wind {
+  font-size: 20px;
+  position: relative;
+  right: 100px;
+  top: 28px;
 }

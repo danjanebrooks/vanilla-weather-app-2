@@ -55,11 +55,18 @@
           <h1>
             <span id="currentCity"></span>, <span id="currentDate">Today</span>
           </h1>
-          <p class="today">
-            <span id="current-temperature"></span>
-            <a href="#" id="celsius">°C</a> <span id="divider"> | </span>
-            <a href="#" id="fahrenheit">°F</a>
-          </p>
+          <div class="row">
+            <div class="col-6">
+              <img src="" id="icon-position" />
+              <span id="current-temperature"></span>
+              <a href="#" id="celsius">°C</a> <span id="divider"> | </span>
+              <a href="#" id="fahrenheit">°F</a>
+            </div>
+            <div class="col-6">
+              <span class="wind">Wind speed:</span>
+              <span id="wind-speed" class="wind">Wind speed</span>
+            </div>
+          </div>
           <div class="row">
             <div class="col-6">
               <div id="current-description" class="description-position">
@@ -70,8 +77,6 @@
               <img src="" id="icon-position" />
             </div>
           </div>
-          Wind speed:
-          <span id="wind-speed">Wind speed</span>
         </header>
       </div>
     </div>

@@ -57,14 +57,16 @@ li {
   left: 100px;
   top: 15px;
 }
-#current-temperature,
-#celsius,
-#fahrenheit {
+#current-temperature {
   font-size: 35px;
 }
 #celsius,
-#fahrenheit {
+#fahrenheit,
+#divider {
   color: #ded5c4;
+  font-size: 17px;
+  position: relative;
+  bottom: 14px;
 }
 #icon-position {
   position: relative;

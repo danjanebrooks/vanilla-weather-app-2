@@ -48,6 +48,18 @@ li {
   border-radius: 10px;
   margin: 15px 10px 0 10px;
 }
+
+.weather-forecast {
+  padding: 5px 40px 5px 40px;
+  background-color: #ded5c4;
+  border-radius: 10px;
+  margin: 15px 10px 0 10px;
+}
+
+.section {
+  margin: 60px 20px 0px 20px;
+}
+
 #current-description {
   font-size: 25px;
 }

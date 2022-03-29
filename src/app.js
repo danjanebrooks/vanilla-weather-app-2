@@ -24,6 +24,46 @@ let date = `${day}, ${hour}:${minutes}`;
 let mainDate = document.querySelector("#currentDate");
 mainDate.innerHTML = date;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+        <div class="col-2, weather-forecast">
+          <div class="weather-forecast-date">Weds</div>
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt=""
+              width="60"
+            />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temp-min"> 9° </span
+            ><span class="weather-forecast-temp-max"> 9° </span>
+          </div>
+        </div>
+      `;
+  forecastHTML =
+    forecastHTML +
+    `
+        <div class="col-2, weather-forecast">
+          <div class="weather-forecast-date">Weds</div>
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt=""
+              width="60"
+            />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temp-min"> 9° </span
+            ><span class="weather-forecast-temp-max"> 9° </span>
+          </div>
+        </div>
+      `;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showWeatherConditions(response) {
   console.log(response.data);
   let cityNow = document.querySelector("#currentCity");
@@ -89,3 +129,4 @@ let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", clickFahrenheit);
 
 search("Manchester");
+displayForecast();

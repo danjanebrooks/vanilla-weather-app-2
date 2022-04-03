@@ -24,26 +24,38 @@ let date = `${day}, ${hour}:${minutes}`;
 let mainDate = document.querySelector("#currentDate");
 mainDate.innerHTML = date;
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  return day;
+}
+
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thur", "Fri", "Sat", "Sun"];
-  days.forEach(function (day) {
+
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
         <div class="col-2 weather-forecast">
-          <div class="weather-forecast-date">${day}</div>
+          <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
             <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
+              src="http://openweathermap.org/img/wn/${
+                forecastDay.weather[0].icon
+              }@2x.png"
               alt=""
               width="60"
             />
           <div class="weather-forecast-temperatures">
-            <span class="weather-forecast-temp-min"> 9° </span
-            ><span class="weather-forecast-temp-max"> 9° </span>
+            <span class="weather-forecast-temp-min"> ${
+              forecastDay.temp.min
+            }° </span
+            ><span class="weather-forecast-temp-max"> ${
+              forecastDay.temp.max
+            }° </span>
           </div>
         </div>
       `;

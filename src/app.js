@@ -27,7 +27,8 @@ mainDate.innerHTML = date;
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  return day;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
 }
 
 function displayForecast(response) {
@@ -36,10 +37,11 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
 
-  forecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
         <div class="col-2 weather-forecast">
           <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
             <img
@@ -50,15 +52,16 @@ function displayForecast(response) {
               width="60"
             />
           <div class="weather-forecast-temperatures">
-            <span class="weather-forecast-temp-min"> ${
+            <span class="weather-forecast-temp-min"> ${Math.round(
               forecastDay.temp.min
-            }° </span
-            ><span class="weather-forecast-temp-max"> ${
+            )}° </span
+            ><span class="weather-forecast-temp-max"> ${Math.round(
               forecastDay.temp.max
-            }° </span>
+            )}° </span>
           </div>
         </div>
       `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;

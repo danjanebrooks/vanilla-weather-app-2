@@ -36,11 +36,11 @@ body {
   margin: 50px 0;
 }
 
-.weather-forecast {
+.weather-forecast-all {
   padding: 5px 10px 5px 10px;
   background-color: #ded5c4;
   border-radius: 10px;
-  margin: 15px 20px 15px 20px;
+  margin: 15px 100px 15px 100px;
   text-align: center;
 }
 
